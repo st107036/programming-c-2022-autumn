@@ -7,18 +7,12 @@ using std::endl;
 int main(int argc, char* argv[])
 {
     setlocale(0, "");
-    int a;
-    int b;
-    int c;
-    c = 0;
-    cin >> a >> b;
-    c = (b * a) % 109;
-    if (c < 0) {
-        cout << 109 + c << endl;
-    }
-    else {
-        cout << c << endl;
-    }
+    int v;
+    int t;
+    int s;
+    cin >> v >> t;
+    s = ((109 + v * t % 109) % 109);
 
+    cout << s;
     return EXIT_SUCCESS;
 }
