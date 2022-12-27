@@ -6,9 +6,14 @@ int main(int argc[], char* argv[])
 	int a = 0, b = 0, c = 0, d = 0, e = 0;
 	std::cin >> a >> b >> c >> d >> e;
 
+	
+
 	for (int i = 0; i < lim; i++)
 	{
-		if (i != e and (a * pow(i, 3) + b * pow(i, 2) + c * i + d) == 0)
+		int x3 = i * i * i;
+		int x2 = i * i;
+		int x = i;
+		if (i != e and (a * x3 + b * x2 + c * x + d) == 0)
 		{
 			count++;
 		}
