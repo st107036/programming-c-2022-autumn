@@ -6,7 +6,7 @@ int main(int argc[], char* argv[])
 
 	std::cin >> number;
 
-	int* array = new int[number];
+	int array[1000]{0};
 	for (int i = 0; i < number; i++)
 	{
 		std::cin >> array[i];
@@ -30,6 +30,5 @@ int main(int argc[], char* argv[])
 
 	std::cout << max << std::endl;
 
-	delete[] array;
 	return EXIT_SUCCESS;
 }

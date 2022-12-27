@@ -8,7 +8,7 @@ int main(int argc[], char* argv[])
 	int min = 1001;
 
 	std::cin >> amount;
-	int* array = new int[amount];
+	int array[1000]{0};
 	for (int i = 0; i < amount; i++)
 	{
 		std::cin >> array[i];
@@ -33,6 +33,5 @@ int main(int argc[], char* argv[])
 	}
 	std::cout << min << std::endl;
 
-	delete[] array;
 	return EXIT_SUCCESS;
 }

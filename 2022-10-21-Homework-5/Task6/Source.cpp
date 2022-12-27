@@ -7,8 +7,8 @@ int main(int argc[], char* argv[])
 
 	std::cin >> amount;
 
-	int* income = new int[amount];
-	int* taxes = new int[amount];
+	int income[1000]{0};
+	int taxes[1000]{0};
 	for (int i = 0; i < amount; i++)
 	{
 		std::cin >> income[i];
@@ -29,7 +29,5 @@ int main(int argc[], char* argv[])
 
 	std::cout << number << std::endl;
 
-	delete[] income;
-	delete[] taxes;
 	return EXIT_SUCCESS;
 }

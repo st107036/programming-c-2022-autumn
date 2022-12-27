@@ -10,7 +10,7 @@ int main(int argc[], char* argv[])
 
 	std::cin >> all_days;
 
-	int* array = new int[all_days];
+	int array[1000]{0};
 	for (int i = 0; i < all_days; i++)
 	{
 		std::cin >> array[i];
@@ -34,6 +34,5 @@ int main(int argc[], char* argv[])
 
 	std::cout << profit << std::endl;
 	
-	delete[] array;
 	return EXIT_SUCCESS;
 }

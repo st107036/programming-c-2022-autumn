@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 
 	std::cin >> size;
 
-	int* array = new int[size];
+	int array[1000]{0};
 
 	for (int i = 0; i < size; i++)
 	{
@@ -29,6 +29,5 @@ int main(int argc, char* argv[])
 
 	std::cout << max << " " << number << std::endl;
 
-	delete[] array;
 	return EXIT_SUCCESS;
 }

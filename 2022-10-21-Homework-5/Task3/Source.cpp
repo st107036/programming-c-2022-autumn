@@ -7,15 +7,23 @@ int main(int argv[], char* argc[])
 
 	std::cin >> size;
 
-	int* array = new int[size];
+	int array[1000]{0};
 
 	for (int i = 0; i < size; i++)
 	{
 		std::cin >> array[i];
+	}
+
+	for (int i = 0; i < size; i++)
+	{
 		if (array[i] < min)
 		{
 			min = array[i];
 		}
+	}
+
+	for (int i = 0; i < size; i++)
+	{
 		if (array[i] > max)
 		{
 			max = array[i];
@@ -30,6 +38,6 @@ int main(int argv[], char* argc[])
 		}
 		std::cout << array[i] << " ";
 	}
-	delete[] array;
+	
 	return EXIT_SUCCESS;
 }
